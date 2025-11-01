@@ -20,4 +20,31 @@
 * Job/Pipeline	>>>>>>> A defined process (like build → test → deploy)
 * Plugin	>>>>>> Adds extra features (e.g., Docker plugin, Git plugin)
 
-## 
+## 🧰 Basic Jenkins Commands
+### Jenkins is mainly managed via a web interface, but here are some useful CLI (Command Line Interface) and service-level commands.
+
+## 🔹 Start, Stop, Restart Jenkins (Linux)
+* sudo systemctl start jenkins
+* sudo systemctl stop jenkins
+* sudo systemctl restart jenkins
+* sudo systemctl status jenkins
+
+## 🔹 Access Jenkins
+### Open a browser and go to:
+* 👉 http://localhost:8080 or http://<server-ip>:8080
+
+## 🔹 Unlock Jenkins (First Time Login)
+* sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+* 👉 Copy this password and paste it into the Jenkins web interface to unlock.
+
+## 🔹 Jenkins CLI Commands
+### (You can run these using jenkins-cli.jar)
+### Connect to Jenkins CLI
+* java -jar jenkins-cli.jar -s http://localhost:8080/ list-jobs
+### Create a new job
+* java -jar jenkins-cli.jar -s http://localhost:8080/ create-job my-job < config.xml
+### Build a job
+* java -jar jenkins-cli.jar -s http://localhost:8080/ build my-job
+### Check job status
+* java -jar jenkins-cli.jar -s http://localhost:8080/ get-job my-job
+
