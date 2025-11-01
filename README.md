@@ -7,11 +7,11 @@
 
 ## ⚙️ Why Use Jenkins?
 ### Main Features In Jenkins
-* Automation	>>>>>> Builds, tests, and deploys automatically when code changes
-* Plugins	>>>>>> 1,800+ plugins for integration (Git, Docker, Kubernetes, etc.)
-* CI/CD Pipeline	>>>>>> Automates the entire development workflow
-* Integration	>>>>>>> Works with Git, GitHub, Maven, Docker, Terraform, etc.
-* Scalability	>>>>>>> Can distribute builds across multiple nodes (Master–Slave setup)
+* Automation	👉 Builds, tests, and deploys automatically when code changes
+* Plugins	👉 1,800+ plugins for integration (Git, Docker, Kubernetes, etc.)
+* CI/CD Pipeline	👉 Automates the entire development workflow
+* Integration	👉 Works with Git, GitHub, Maven, Docker, Terraform, etc.
+* Scalability	👉 Can distribute builds across multiple nodes (Master–Slave setup)
 
 ## 🧱 Jenkins Architecture
 ### Main Components Of Architechture
@@ -48,3 +48,10 @@
 ### 👉 Check job status
 * java -jar jenkins-cli.jar -s http://localhost:8080/ get-job my-job
 
+## 🧩 Common Jenkins Tasks:-
+### Task In Jenkins
+* Create Job	👉 Automate a task (build, deploy, etc.)
+* Add Node	👉 Add new build agents/slaves
+* Install Plugin	👉 Add integrations like Git, Docker
+* Configure Webhooks	👉 Trigger builds automatically when code changes (e.g., from GitHub)
+* View Console Output	👉 Check logs of running jobs
