@@ -39,12 +39,12 @@
 
 ## 🔹 Jenkins CLI Commands
 ### (You can run these using jenkins-cli.jar)
-### Connect to Jenkins CLI
+### 👉 Connect to Jenkins CLI
 * java -jar jenkins-cli.jar -s http://localhost:8080/ list-jobs
-### Create a new job
+### 👉 Create a new job
 * java -jar jenkins-cli.jar -s http://localhost:8080/ create-job my-job < config.xml
-### Build a job
+### 👉 Build a job
 * java -jar jenkins-cli.jar -s http://localhost:8080/ build my-job
-### Check job status
+### 👉 Check job status
 * java -jar jenkins-cli.jar -s http://localhost:8080/ get-job my-job
 
